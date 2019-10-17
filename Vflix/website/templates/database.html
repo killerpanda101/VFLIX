@@ -1,0 +1,17 @@
+{% extends "form.html" %}
+{% block content %}
+ 
+
+<div class="container">
+
+{% for movie in movies %}
+  <h4> {{ movie.title }}</h4>
+  <p> {{ movie.description }} </p>
+  <br>
+{% endfor %}
+</div>
+
+
+
+
+{% endblock content %}

@@ -1,0 +1,74 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<style type="text/css">
+    .divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}
+</style>
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">ADMIN PANEL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbar1">
+    <ul class="navbar-nav ml-auto"> 
+<li class="nav-item active">
+<a class="nav-link" href="/form_add">Add Movie <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="/form_remove">Remove Movie <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="/database">Database <span class="sr-only">(current)</span></a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="/">Logout <span class="sr-only">(current)</span></a>
+</li>
+    </ul>
+  </div>
+</nav>
+
+
+
+
+<br>
+<br>
+<br>
+
+
+
+
+
+{% block content %}{% endblock %}
