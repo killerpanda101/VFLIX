@@ -1,0 +1,5 @@
+Flask>=2.3
+Flask-SQLAlchemy>=3.0
+Flask-WTF>=1.2
+Pillow>=10.3
+Werkzeug>=3.0.3
